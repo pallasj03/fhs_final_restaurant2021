@@ -1,43 +1,278 @@
 <!doctype html>
 <html>
     <head>
-
-        <title>Page Title</title>
-            <link rel="stylesheet" type="text/css" href="css/restaurant.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+        <title>Restaurant Menu Page</title>
+        <link type="text/css" rel="stylesheet" href="css/restaurant.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     </head>
+    
     <body>
         <header>
-        <div class="iconBar">
-           <i class="fab fa-facebook-square"></i>
-           <i class="fab fa-instagram-square"></i>
-           <i class="fab fa-snapchat"></i>
-           <div class="headercontact">
-            <i class="fas fa-phone-square-alt"></i>
-              <p>
-                call us to order:<a href="tel: +1-748-752-1048">(748-752-1048)</a>
-              </p>
-              
-           </div>
-           
-         </div>
+            <div class="iconBar">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-snapchat-square"></i>
+            </div>
+            <div class="headerContact">
+                <i class="fas fa-phone-alt"></i>
+                <p>Call us to order: <a href="tel: +1-748-752-1048">(748) 753-1048</a></p>
+            </div>
         </header>
         <nav>
+            <img src="images/restaurantLogo1.png" alt="logo">
             <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="menu.html">Our menu</a></li>
-              <li><a href="location.html">Location</a></li>
-
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Our Menu</a></li>
+                <li><a href="location.html">Locations</a></li>
             </ul>
         </nav>
+        
         <div class="container">
-            <!-- Write Assignment code under here-->
+
+            <div class="pagelinks" id="top">
+              <a href="#Appetizers">Appetizers</a>
+              <a href="#Entrees">Entree's</a>
+              <a href="#Salads">Salads</a>
+              <a href="#Desserts">Dessert</a>
+            </div>
             
+            <!-- ********* Appetizers(4) **************-->
+            <h3 class="menu-category" id="Appetizers">Appetizers</h3>
+            <hr class="menu-separator">
+            <div class="menu-container">
+
+                <div class="menu-item">
+                    <div class="menu-pic">
+                        <img src="images/hushpuppies.png" alt="#" title="Item Name">
+                    </div>
+                    <h4>Hush Puppies</h4>
+                    <h5>$2.99</h5>
+                    <p>
+                        Fried corn-meal batter
+                    </p>
+
+                </div><!-- End of menu item -->
+
+                <div class="menu-item">
+                    <div class="menu-pic">
+                        <img src="images/mozzarellasticks.png" alt="#" title="Item Name">
+                    </div>
+                    <h4>Mozzarella sticks</h4>
+                    <h5>$4.65</h5>
+                    <p>
+                        Fried mozzarella
+                    </p>
+
+                </div><!-- End of menu item -->
+
+                <div class="menu-item">
+                    <div class="menu-pic">
+                        <img src="images/spinachdip..png" alt="#" title="Item Name">
+                    </div>
+                    <h4>Spinach dip</h4>
+                    <h5>$6.99</h5>
+                    <p>
+                       fresh spinah in a creamy sauce.
+                    </p>
+
+                </div><!-- End of menu item -->
+
+                <div class="menu-item">
+                    <div class="menu-pic">
+                        <img src="images/macaronibites.png" alt="#" title="Item Name">
+                    </div>
+                    <h4>Macaroni Bites</h4>
+                    <h5>$5.99</h5>
+                    <p>
+                        Fried macaroni and cheese
+                    </p>
+
+                </div><!-- End of menu item -->
+
+
+            </div><!-- End of menu container -->
+            <!-- ********* End of Appetizers **************-->
             
+            <a href="#Top" class="to-top">Back to top <i class="fas fa-arrow-circle-up"></i></a>
+
             
+            <!-- ********* Salads (3) **************-->
+            <h3 class="menu-category" id="Salads">Salads</h3>
+            <hr class="menu-separator">
+            <div class="menu-container">
+
+                <div class="menu-item">
+                    <div class="menu-pic">
+                        <img src="images/southwestsalad.png" alt="#" title="Item Name">
+                    </div>
+                    <h4>southwest salad</h4>
+                    <h5>$9.95</h5>
+                    <p>
+                        Put the dish description here...
+                    </p>
+
+                </div><!-- End of menu item -->
+
+                <div class="menu-item">
+                    <div class="menu-pic">
+                        <img src="images/cobbsalad.png" alt="#" title="Item Name">
+                    </div>
+                    <h4>Cobb Salad</h4>
+                    <h5>$8.95</h5>
+                    <p>
+                      lettuce, tomato, bacon,chicken,boiled eggs, avocado, chives, Roquefort cheese, and red-wine vinaigrette.
+                    </p>
+
+                </div><!-- End of menu item -->
+
+                <div class="menu-item">
+                    <div class="menu-pic">
+                        <img src="images/grilledchickensalad.png" alt="#" title="Item Name">
+                    </div>
+                    <h4>Grilled chicken salad</h4>
+                    <h5>$7.95</h5>
+                    <p>
+                       Grilled chicken, bacon, cheddar-jack, tomato, cucumber and croutons on mixed greens
+                    </p>
+
+                </div><!-- End of menu item -->
+
+
+            </div><!-- End of menu container -->
+            <!-- ********* End of Salads **************-->
+             
+              <a href="#Top" class="to-top">Back to top <i class="fas fa-arrow-circle-up"></i></a>
+              
+            <!-- ********* Entrees(6) **************-->
+            <h3 class="menu-category" id="Entrees">Entrees</h3>
+            <hr class="menu-separator">
+            <div class="menu-container">
+
+                <div class="menu-item">
+                    <div class="menu-pic">
+                        <img src="images/soulfood.png" alt="#" title="Item Name">
+                    </div>
+                    <h4>Fried chicken meal</h4>
+                    <h5>$10.95</h5>
+                    <p>
+                       fried chicken, collard greens, macaroni & cheese, fried okra
+                    </p>
+
+                </div><!-- End of menu item -->
+
+                <div class="menu-item">
+                    <div class="menu-pic">
+                        <img src="images/lasagna.png" alt="#" title="Item Name">
+                    </div>
+                    <h4>lasagna</h4>
+                    <h5>$8.75</h5>
+                    <p>
+                        creamy ricotta with a rich meat sauce layered  between noodles.
+                    </p>
+
+                </div><!-- End of menu item -->
+
+                <div class="menu-item">
+                    <div class="menu-pic">
+                        <img src="images/potroastandpotatoes.png" alt="#" title="Item Name">
+                    </div>
+                    <h4>Pot Roast and Potatoes</h4>
+                    <h5>$12.95</h5>
+                    <p>
+                        Tender pot roast with veggies and mashed potatoes
+                    </p>
+
+                </div><!-- End of menu item -->
+
+                <div class="menu-item">
+                    <div class="menu-pic">
+                        <img src="images/braisedshortribs.png" alt="#" title="Item Name">
+                    </div>
+                    <h4>Braised short ribs</h4>
+                    <h5>$14.83</h5>
+                    <p>
+                        Braised short ribs with veggies and your choice of garlic or loaded mash potatoes.
+                    </p>
+
+                </div><!-- End of menu item -->
+
+                <div class="menu-item">
+                    <div class="menu-pic">
+                        <img src="images/cajunseafoodpasta.png" alt="#" title="Item Name">
+                    </div>
+                    <h4>Cajun seafood pasta</h4>
+                    <h5>$10.25</h5>
+                    <p>
+                        creamy alfredo pasta with shrimp and chicken with pinch of heat.
+                    </p>
+
+                </div><!-- End of menu item -->
+
+                <div class="menu-item">
+                    <div class="menu-pic">
+                        <img src="images/salmonpatties.png" alt="#" title="Item Name">
+                    </div>
+                    <h4>Salmon patties</h4>
+                    <h5>$8.37</h5>
+                    <p>
+                       Salmon pattties fried to perfection, with a small side or white rice and whole kernel corn.
+                    </p>
+
+                </div><!-- End of menu item -->
+
+
+            </div><!-- End of menu container -->
+            <!-- ********* End of Entrees **************-->
             
-            
-            
+             <a href="#Top" class="to-top">Back to top <i class="fas fa-arrow-circle-up"></i></a>
+             
+            <!-- ********* Desserts(3) **************-->
+            <h3 class="menu-category" id="Desserts">Desserts</h3>
+            <hr class="menu-separator">
+            <div class="menu-container">
+
+                <div class="menu-item">
+                    <div class="menu-pic">
+                        <img src="images/cheesecake.png" alt="#" title="Item Name">
+                    </div>
+                    <h4>Cheesecake</h4>
+                    <h5>$5.99</h5>
+                    <p>
+                        caramel cheesecake
+                    </p>
+
+                </div><!-- End of menu item -->
+
+                <div class="menu-item">
+                    <div class="menu-pic">
+                        <img src="images/pecanpie.png" alt="#" title="Item Name">
+                    </div>
+                    <h4>Pecan pie</h4>
+                    <h5>$3.99</h5>
+                    <p>
+                       chewy pecan pie
+                    </p>
+
+                </div><!-- End of menu item -->
+
+                <div class="menu-item">
+                    <div class="menu-pic">
+                        <img src="images/bananapudding.png" alt="#" title="Item Name">
+                    </div>
+                    <h4>Banana pudding</h4>
+                    <h5>$5.99</h5>
+                    <p>
+                      creamy banana pudding
+                    </p>
+
+                </div><!-- End of menu item -->
+
+
+            </div><!-- End of menu container -->
+            <!-- ********* End of Desserts **************-->
+               
+               <a href="#Top" class="to-top">Back to top <i class="fas fa-arrow-circle-up"></i></a>
+    
         </div><!-- End of container -->
         <footer>
             Placeholder

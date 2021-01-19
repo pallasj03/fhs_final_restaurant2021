@@ -1,78 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
-            * {
+
+@keyframes fadeinanimation {
+   0% {
+      opacity:0;
+   }
+   100% {
+      opacity:1;
+   }
+}
+
+ * {
                 margin:0;
                 padding:0;
                 box-sizing: border-box;
-                font-family:'yusei magic';
+                font-family: "Yusei";
             }
-            /*Header css*/
+            /*Header CSS */
             header {
-              display:flex;
+                 display:flex;
                 padding:1vh;
             }
             .iconBar {
               flex-basis:50%;
-              font-size:1.25rem;
+              font-size:2rem;
             }
-            .i{
-              margin:.5vh;
-              Color:slategray;
+            i {
+               margin: .5vh;
+               color: black;
             }
             .headerContact {
-              font-size:1.25rem;
-              flex-basis:50%;
+              font-size:1.25;
+              flex-basis:100%;
               text-align:right;
-              display:flex;
+              display: flex;
               align-items:center;
-              justify-content:flex-end;
+              justify-content: flex-end;
+             
             }
-            .headercontact a {
-              color:black;
+            .headerContact a{
+                color: black;
             }
-
-
-           /* nav css*/
-
            
+            /* Nav CSS*/
             body {
                 background: white;
             }
-
             nav {
                 background:black;
                 color:white;
                 display:flex;
-                height:3rem;
+                height:4rem;
                 overflow:hidden;
             }
             nav ul {
-              list-style-type:none;
-              display:inline-block;
+              list-style-type: none;
+              display: inline-block;
             }
             nav li {
-              display:inline;
+              display: inline;
             }
-            nav li a {
-              display:inline-block;
+            nav li a{
+              display: inline-block;
               padding: 1rem 2rem;
-              color:white;
-              text-decoration:none;
-              border-right:1px solid rgba(255, 225, 225, .25);
-              transition: background-color .25s ease;
+              color: white;
+              text-decoration: none;
+              border-right: 1px solid #e5e5e5(255, 255, 255, 255, .25);
+              transition:background-color .05s ease;
             }
             nav li a:hover {
-              background-color:rgba(255, 225, 225, .25);
+              background-color: #e5e5e5(255, 255, 255, .25);
               text-decoration:underline;
             }
             nav img {
-              display:inline-block;
-              height:100%;
-              background:rgba(255, 225, 225, .25);
-              border-radius:30px;
-              margin-right: 1rem;
+                display: inline-block;
+                height: 100%;
+                background: #e5e5e5(255, 203, 5, 1);
+                border-radius: 40px;
+                margin-right: 1rem;
             }
-            
-            
+           
             footer {
                 background:black;
                 color:white;
@@ -81,9 +87,189 @@
             }
             .container {
                 min-height:75vh;
-                background:beige;
+                background:#e5e5e5(249, 105, 14, 1);
                 width:80%;
                 margin:auto;
                 padding:2vh;
             }
-            
+            /* Index Main Page*/
+            .Jumbotron {
+              position: relative;
+              width: 100%;
+              color: #e5e5e5;
+              text-align: center;
+            }
+            .overlay {
+              height: 100%;
+              width: 100%;
+              position: absolute;
+              bottom: 0;
+              align-self: center;
+              left:0;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              background: #e5e5e5(87, 0, 0, 0.15);
+              animation: fadeinanimation ease 2.5s;
+              animation-iteration-count: 1;
+              animation-fill-mode: forwards;
+            }
+            .overlay h3 {
+              font-size: 5rem;
+              margin: 1rem;
+            }
+            .overlay p{
+               font-size: 2.5rem;
+            }
+            .jumbotron img {
+              width:100%;
+              height: 475px;
+              display: block;
+              filter brightness(50%);
+            }
+            /* COde for all buttons*/
+            .jumbortron a, .text a {
+                font-size: 1.2rem;
+                display:block;
+                max-width:300px;
+                text-align:center;
+                padding: .6rem;
+                color: black;
+                text-decoration: none;
+                background-color: #e5e5e5(240, 255, 0, 1);
+                margin: 1rem auto;
+                border-radius: 6px;
+                border: 1px solid #e5e5e5(242, 38, 19, 1);
+                transition: padding .25s ease, background-color .5s ease;
+            }
+            .jumbotron a:hover, .text a:hover {
+               padding: 1rem;
+               background-color: #e5e5e5(128, 27, 27, 1.0);
+               color:white;
+            }
+            /*code for just jumbotron button*/
+            .jumbotron a {
+              font-size: 1.75rem;
+              background-color: black;
+              color: white;
+              min-width: 25%;
+            }
+           
+           
+          /* Index Row Code*/
+          .row {
+            width: 100%;
+            height: 50vh;
+            display: flex;
+            flex-wrap: nowrap;
+            border-bottom: 1px solid #dad7cd(0, 0, 0, .25);
+            margin-bottom: .5rem;
+            overflow: hidden;
+          }
+          .row .media {
+            height: 100%;
+            flex-basis: 40%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .media img {
+            display: block;
+            height:90%;
+          }
+          .media i{
+            font-size: 40vh;
+          }
+          .row .text {
+            padding: 1rem;
+            flex-basis: 60%;
+            font-size: 1.2rem;
+            line-height: 1.8rem;
+          }
+          .text p {
+            width:80%;
+            margin: 1rem auto;
+          }
+          .text h3 {
+            font-size:2.5rem;
+            text-align: center;
+            margin: 1rem;
+          }
+         /* Menu Page CSS*/
+.pageLinks {
+    padding: 1rem;
+    text-align: center;
+}
+.pageLinks a, .to-top {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.15rem;
+    padding: 1rem 2rem;
+    border-right: 1px solid lightgray;
+}
+.pageLinks a:first-child {
+    padding: 1rem 2rem 1rem .15rem;
+}
+.pageLinks a:hover, .to-top:hover {
+    text-decoration: underline;
+}
+.to-top {
+    border: none;
+    display: block;
+    width:20%;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.menu-category {
+    font-size: 2rem;
+    padding: 1rem .25rem;
+    text-align: center;
+}
+.menu-separator {
+    border: 1px solid lightgray;
+    width: 40%;
+    margin: .5rem auto;
+}
+.menu-container {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.menu-item {
+    flex: 0 0 30%;
+    text-align: center;
+}
+.menu-pic {
+    overflow: hidden;
+    padding: 1vh;
+    height: 30vh;
+}
+.menu-pic img {
+    display: block;
+    height: 100%;
+    margin: auto;
+}
+.menu-item h4 {
+    font-size: 1.1rem;
+    background: black;
+    color: white;
+    padding: 1rem;
+}
+.menu-item h5 {
+    font-size: 1rem;
+    padding: .75rem;
+    font-style: italic;
+}
+.menu-item p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: .75rem;
+}
+          
